@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bouncy</title>
+	<meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="flex">
+	   		<div class="header-top">
+	   			<a href="#" class="header-top__logo">
+	   				<img src="i/logo.svg" alt="logo">
+	   			</a>
+	   			<div class="header-top__nav">
+	   				<a class="header-top__nav_link" href="#">Hello</a>
+	   				<a class="header-top__nav_link" href="#portfolio">Portflio</a>
+	   				<a class="header-top__nav_link" href="#theTeam">Team</a>
+	   				<a class="header-top__nav_link" href="#contactUs">Contact</a>
+	   			</div>
+	   		</div>
+	   		<div class="header-middle">
+	   			<h1 class="header-middle__h1">We Are Code Cafe</h1>
+	   			<p class="header-middle__p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+	   		</div>
+	   		<a href="#portfolio" class="header-arrow" id="headerArrow">
+	   			<img src="i/arrowDown.png" alt="arrowDown" class="arrowDown">
+	   		</a>
+	   	</div>
+		</div>
+	</header>
+
+	<section class="portfolio" id="portfolio">
+		<div class="container">
+			<h2 class="portfolio__h2">the portfolio</h2>
+			<p class="portfolio__p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+			<div class="portfolio__links">
+				<span class="portfolio__links_item portfolioCurrentClass" data-filter="*">All Works</span>
+				<span class="portfolio__links_item" data-filter=".print">Print</span>
+				<span  class="portfolio__links_item" data-filter=".branding">Branding</span>
+				<span class="portfolio__links_item" data-filter=".web">Web</span>
+				<span class="portfolio__links_item" data-filter=".html">HTML</span>
+			</div>
+			<div class="portfolio__images">
+				<img class="portfolio__images_item print" src="i/01.jpg" alt="">
+				<img class="portfolio__images_item branding" src="i/02.jpg" alt="">
+				<img class="portfolio__images_item web" src="i/03.jpg" alt="">
+				<img class="portfolio__images_item html" src="i/04.jpg" alt="">
+				<img class="portfolio__images_item print" src="i/05.jpg" alt="">
+				<img class="portfolio__images_item branding" src="i/06.jpg" alt="">
+				<img class="portfolio__images_item web" src="i/07.jpg" alt="">
+				<img class="portfolio__images_item html" src="i/08.jpg" alt="">
+				<img class="portfolio__images_item print" src="i/09.jpg" alt="">
+				<img class="portfolio__images_item branding" src="i/10.jpg" alt="">
+				<img class="portfolio__images_item web" src="i/11.jpg" alt="">
+				<img class="portfolio__images_item html" src="i/12.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="theTeam" id="theTeam">
+		<div class="container">
+			<h2 class="theTeam__h2">the team</h2>
+			<p class="theTeam__p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+			<div class="theTeam__slider">
+				<div class="theTeam__slider_slide1 fade">
+					<img src="i/teamMember1.jpg" alt="" class="">
+					<div class="theTeam__biograph">
+						<h3 class="theTeam__biograph_h3">Abdullah Noman</h3>
+						<h4 class="theTeam__biograph_h4">Creative Director, Code Cafe</h4>
+						<p class="theTeam__biograph_p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+					</div>
+				</div>
+				<div class="theTeam__slider_slide1 fade">
+					<img src="i/teamMember2.jpg" alt="" class="">
+					<div class="theTeam__biograph">
+						<h3 class="theTeam__biograph_h3">Bogdan Stupka</h3>
+						<h4 class="theTeam__biograph_h4">Ukrainian actor</h4>
+						<p class="theTeam__biograph_p">Богдан Ступка родился 27 августа 1941 года в посёлке Куликов (ныне Жолковского района Львовской области Украины). В 1948 году семья переехала во Львов. Не поступив в политехнический институт, некоторое время был учеником слесаря, затем фотографом в астрономической лаборатории (лаборант-вычислитель на переменных звёздах).</p>
+					</div>
+				</div>
+				<div class="theTeam__slider_slide1 fade">
+					<img src="i/teamMember3.jpg" alt="">
+					<div class="theTeam__biograph">
+						<h3 class="theTeam__biograph_h3">Til Schweiger</h3>
+						<h4 class="theTeam__biograph_h4">Deutscher Schriftshteller</h4>
+						<p class="theTeam__biograph_p">Til Schweiger wuchs als mittlerer von drei Brüdern in Heuchelheim auf und besuchte die Herderschule Gießen, an der sein Vater Herbert Lehrer war. Seine Mutter arbeitete als Geschichtslehrerin.[1] Nach dem Abitur begann er mit der Ableistung seines Grundwehrdienstes; er war unter anderem in den Niederlanden stationiert.</p>
+					</div>
+				</div>
+
+				<div class="theTeam__slider_dots">
+					<span class="theTeam__slider_dot" onclick="currentSlide(1)"></span>
+					<span class="theTeam__slider_dot" onclick="currentSlide(2)"></span>
+					<span class="theTeam__slider_dot" onclick="currentSlide(3)"></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="loved" id="loved">
+		<div class="container">
+			<div  class="loved__slogan">Already Loved Us? Let’s talk!</div>
+			<a href="#contactUs" class="loved__btn">Contact Us</a>
+		</div>
+	</section>
+
+	<section class="testi">
+		<div class="container">
+			<h2 class="testi__h2">Testimonials</h2>
+			<p class="testi__p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+
+			<div class="testi__slider">
+				<div class="card fade">
+					<img src="i/face1.jpg" alt="" class="card__photo">
+					<div class="card__descript">
+						<p class="card__descript_phrase">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+						<p class="card__descript_name">partho</p>
+						<p class="card__descript_company">founder, artways bd</p>
+					</div>
+				</div>
+				<div class="card fade">
+					<img src="i/face2.jpg" alt="" class="card__photo">
+					<div class="card__descript">
+						<p class="card__descript_phrase">The Prime Minister is the head of government and chief executive of Japan. The Prime Minister is appointed by the Emperor of Japan after being designated by the National Diet and must enjoy the confidence of the House of Representatives to remain in office.</p>
+						<p class="card__descript_name">Shinzō Abe</p>
+						<p class="card__descript_company">Prime Minister, Japan</p>
+					</div>
+				</div>
+				<div class="card fade">
+					<img src="i/face3.jpg" alt="" class="card__photo">
+					<div class="card__descript">
+						<p class="card__descript_phrase">The United States Senate is the upper chamber of the United States Congress, which along with the United States House of Representatives—the lower chamber—comprises the legislature of the United States.</p>
+						<p class="card__descript_name">Mike Pence</p>
+						<p class="card__descript_company">President of the Senate, USA</p>
+					</div>
+				</div>
+				<div class="testi__slider_dots">
+					<span class="testi__slider_dot"></span>
+					<span class="testi__slider_dot"></span>
+					<span class="testi__slider_dot"></span>					
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="contactUs" id="contactUs">
+		<h2 class="contactUs__h2">contact us</h2>
+		<p class="contactUs__p">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+		<div class="contactUs__map" id="map"></div>
+
+	</section>
+	
+
+	<footer class="copySocial">
+		<div class="copySocial__logo">
+			<img src="i/logo2.svg" alt="">
+		</div>
+		<p class="copySocial__copyRight">Copyright 2015. All rights Reserved</p>
+		<div class="copySocial__icons">
+			<a href="#" class="copySocial__icons_item copySocial__icons_fb">
+				<img src="i/faceBookIcon.svg" alt="">
+			</a>
+			<a href="#" class="copySocial__icons_item copySocial__icons_tw">
+				<img src="i/twitterIcon.svg" alt="">
+			</a>
+			<a href="#" class="copySocial__icons_item copySocial__icons_in">
+				<img src="i/inIcon.svg" alt="">
+			</a>
+			<a href="#" class="copySocial__icons_item copySocial__icons_ins">
+				<img src="i/instIcon.svg" alt="">
+			</a>
+			<a href="#" class="copySocial__icons_item copySocial__icons_v">
+				<img src="i/vIcon.svg" alt="">
+			</a>
+		</div>
+	</footer>
+
+	<div class="btnUp" id="btnUp">
+		<img src="i/arrowUp.png" alt="">
+	</div>
+
+
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIWhh-3WPWxYNwqyVZJIfW2F6PFbVwM3Q&callback=initMap"
+    async defer></script>
+<script src="js/script.js"></script>
+</body>
+</html>
